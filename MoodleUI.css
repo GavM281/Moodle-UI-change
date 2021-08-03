@@ -1,0 +1,157 @@
+/* MAKE NAVBAR SMALLER */
+/* Decrease navbar height */
+.navbar{
+    height:80px;
+}
+
+/* Reduce height of university logo */
+.headerlogo img{
+    max-width: 130px;
+}
+
+
+/* FIX NAVBAR */
+/* Center user info vertically in nav bar */
+.user-nav {
+    top: 50%;
+    position: relative;
+    margin: 0;
+}
+
+/* Center nav buttons vertically */
+.main-nav {
+    margin-top: .7rem;
+}
+
+/* Change location of customise page button to be middle of nav bar, won't fit in original position */
+.pagebuttons {
+    position: absolute;
+    right: 26rem;
+    bottom: .7rem;
+}
+
+
+
+/* ROUND CORNERS */
+/* Round corners of button */
+.btn-default, .btn-primary {
+    border-radius: 8px !important;
+}
+
+/* Round bottom corners of secondary button EG: show/hide menu button */
+body.lang-en .site-menu .btn-secondary {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Round top corners of first course in list */
+.list-group-item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Round bottom corners of last course in list */
+.list-group-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Round corners of blocks */
+.block{
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.card{
+    border-radius: 12px !important;
+}
+
+/* Rounds: buttons, customise page button, user info(notifications, messages, name), "other users" button on log in */
+.btn-outline-secondary, .btn-secondary, .pagebuttons .btn, .user-nav, .lbl-toggle {
+    border-radius: 8px;
+}
+
+/* Rounds top,bottom left corners of box around back arrow at bottom of page */
+.page-item.disabled .page-link {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Rounds top,bottom right corners of box around forward arrow at bottom of page */
+.page-item:last-child .page-link {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Rounds corners of course header, adds shadow below */
+.course-header {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+/* Round corners of card behind course header */
+#page-header .col-12 .card {
+    background-color: transparent;
+}
+
+/* Round corner of course page */
+div#learningcontent {
+    border-radius: 12px;
+}
+
+
+
+/* HEIGHT ADJUSTMENTS */
+/* Move show/hide menu button higher up page to remove gap left by smaller nav bar*/
+.site-menu {
+    top: 230px;
+}
+
+/* Reduces gap between navbar and page content */
+#page {
+    margin-top: 70px;
+}
+
+/* Move menu higher up page to remove gap left by smaller nav bar, increase total height so no gap at bottom */
+[data-region="drawer"] {
+    top: 80px;
+    height: calc(100% - 80px) !important;
+}
+
+/* Move message menu higher up page to remove gap left by smaller nav bar, increase total height so no gap at bottom */
+[data-region="right-hand-drawer"].drawer {
+    top: 80px;
+    height: calc(100% - 80px) !important;
+}
+
+/* Center user name and picture on header - name was too high while picture was normal, lower both name and picture with padding then raise picture with margin. No way to only increase name */
+.usermenu{
+    padding-top: 5px;
+}
+.userpicture{
+    margin-top: -5px;
+    margin-left: 5px; /* Increase space between name and picture */
+}
+
+
+/* SPACING */
+/* Slightly increase space between module filter options and list of modules */
+.flex-wrap {
+    margin-bottom: 5px;
+}
+
+/* Reduce height between card titles and top of cards */
+.block-region .block h5.card-title {
+    padding: 0.3rem 1rem 0rem;
+}
+
+/* Increase space between bottom of course list and forward/back buttons */
+.mt-1, .my-1 {
+    margin-top: 0.50rem;
+}
+
+/* Center text */
+.col-md-12 {
+    text-align: center;
+}
