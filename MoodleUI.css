@@ -151,7 +151,7 @@ div#learningcontent {
     margin-top: 0.50rem;
 }
 
-/* Center text */
-.col-md-12 {
+/* Center text, can be messy */
+/* .col-md-12 {
     text-align: center;
-}
+} */
