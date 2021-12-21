@@ -42,6 +42,7 @@
 body.lang-en .site-menu .btn-secondary {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
 }
 
 /* Round top corners of first course in list */
@@ -134,7 +135,7 @@ div#learningcontent {
 
 
 /* List of module sections */
-/* Round top corners on first section */
+/* First tab */
 #toggle-1{
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
@@ -151,16 +152,24 @@ ul.ctopics li:last-child .content .toggle{
     border-bottom-left-radius: 12px !important;
 }
 
-/* Unround corners on toggleable sections */
+/* Unround corners on toggleable tabs */
 .toggle{
     border-radius: 0px !important;
 }
 
-/* Unround corners on non-toggleable sections */
+/* Unround corners on non-toggleable tabs */
 .content {
     border-radius: 0px !important;
 }
 
+/* Alert message that occasionally appears  */
+.alertbox{
+    border-radius: 12px;
+}
+/* Radius for message needs to be smaller than alert box otherwise there was a gap */
+.alertmessage{
+    border-radius: 9px;
+}
 
 
 /* HEIGHT ADJUSTMENTS */
